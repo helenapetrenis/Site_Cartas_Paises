@@ -1,0 +1,289 @@
+/*Comandos Básicos*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilização Geral*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 50px;
+}
+
+body {
+    background-image: url(https://wallpapers.com/images/hd/high-resolution-continents-and-ocean-world-map-lpblmpaoeh2kosqj.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Mistura cor + imagem */
+    background-blend-mode: darken  
+}
+
+/*Cabeçalho*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4C005C;
+  color: #FAF5FF;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 70px;
+  border-bottom: 4px solid #CFB53B;
+}
+
+/*Caixa de Introdução*/
+
+.introducao {
+  max-width: 1120px;
+  width: 90%;
+  margin: 35px auto 0 auto;
+  padding: 18px 25px;
+  background: rgba(52, 21, 57, 0.85);
+  border-left: 5px solid #CFB53B;
+  border-radius: 10px;
+  color: #FAF5FF;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/*Botões do cabeçalho*/
+
+nav {
+    display: flex;
+    gap: 10px;                      
+}
+
+nav a { 
+    padding: 10px 18px; 
+    color: #FAF5FF; 
+    text-decoration: none; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav a:hover{
+    background: linear-gradient(purple, white);
+    transform: translateX(5px);
+    border-radius: 5px;
+    border: 2px solid #CFB53B;
+}
+
+
+/*Card 1 - Canadá*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 320px; 
+    height: 440px; 
+    padding: 20px 0; 
+    background-image: linear-gradient(#341539, purple);
+    border: 7px solid #CFB53B;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card:hover{
+  transform: translateX(20px);
+  transform: translateX(-20px); /*A imagem sobe*/
+  background-image: url(https://www.momondo.de/discover/wp-content/uploads/sites/264/2022/11/DEST_CANADA_BANFF-GettyImages-525508231-1-1640x1312.jpg);
+
+  /*Alinhando a imagem*/
+  background-size: cover;
+  background-position: center
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 8px; 
+    border: 5px solid #CFB53B;
+    border-radius: 15px;
+    background-image: linear-gradient(#341539, purple);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 12px;   
+    color: white;
+    text-align: center;
+}
+
+/*Estilização dos atributos*/
+
+ul {
+    list-style: none; 
+    width: 100%; 
+}
+
+li {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #CFB53B;
+    border-radius: 8px;
+    background-image: linear-gradient(purple, #341539);
+    padding: 6px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+li {
+    margin-bottom: 0
+}
+
+li:hover{
+    background: linear-gradient(purple, white);
+    transform: translateX(3px)
+}
+
+img {
+    width: 150px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+/*Efeito de sombra*/
+
+.card{
+  /*Aplicar o efeito de transição -> mudança de estado*/
+  transition: all 0.4s ease-in-out; /*Tipo de efeito | tempo | tipo de transição*/
+  box-shadow: 0px 7px 10px black;
+}
+
+/*Card 2 - Alemanha*/
+
+.card_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 320px; 
+    height: 440px; 
+    padding: 20px 0; 
+    background-image: linear-gradient(#341539, purple);
+    border: 7px solid #CFB53B;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card_2:hover{
+  transform: translateX(20px);
+  transform: translateX(-20px); 
+  background-image: url(https://www.edobabado.com.br/wp-content/uploads/2016/09/berlim.jpg);
+
+  /*Alinhando a imagem*/
+  background-size: cover;
+  background-position: center;
+}
+
+.titulo_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 8px; 
+    border: 5px solid #CFB53B;
+    border-radius: 15px;
+    background-image: linear-gradient(#341539, purple);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.conteudo_2 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 12px;   
+    color: white;
+    text-align: center;
+}
+
+/*Efeito de sombra*/
+
+.card_2{
+  /*Aplicar o efeito de transição -> mudança de estado*/
+  transition: all 0.4s ease-in-out; /*Tipo de efeito | tempo | tipo de transição*/
+  box-shadow: 0px 7px 10px black; 
+}
+
+/*Card 3 - Japão*/
+
+.card_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 320px; 
+    height: 440px; 
+    padding: 20px 0; 
+    background-image: linear-gradient(#341539, purple);
+    border: 7px solid #CFB53B;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card_3:hover{
+  transform: translateX(20px);
+  transform: translateX(-20px); 
+  background-image: url(https://static.wixstatic.com/media/b08f73_61196e31114c460ea0044e29201c99f0~mv2.jpg/v1/fill/w_980,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b08f73_61196e31114c460ea0044e29201c99f0~mv2.jpg);
+
+  /*Alinhando a imagem*/
+  background-size: cover;
+  background-position: center;
+}
+
+.titulo_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 8px; 
+    border: 5px solid #CFB53B;
+    border-radius: 15px;
+    background-image: linear-gradient(#341539, purple);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.conteudo_3 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 12px;   
+    color: white;
+    text-align: center;
+}
+
+/*Efeito de sombra*/
+
+.card_3{
+  /*Aplicar o efeito de transição -> mudança de estado*/
+  transition: all 0.4s ease-in-out; /*Tipo de efeito | tempo | tipo de transição*/
+  box-shadow: 0px 7px 10px black; 
+}
